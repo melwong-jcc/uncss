@@ -1,2 +1,2 @@
-/web/
-/src/
+.idea/
+/node_modules/**
