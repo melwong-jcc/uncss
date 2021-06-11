@@ -1,15 +1,14 @@
 var gulp = require('gulp');
-var uncss = require('gulp-uncss');
+var postcss = require('gulp-postcss');
+var uncss = require('postcss-uncss');
 
-gulp.task('uncss', function () {
-  return gulp.src([
-    'src/styles-srl.css',
-    'src/styles-srl.min.css'
-  ])
-    .pipe(uncss({
-      html: ['web/feedback.html']
-    }))
+gulp.task('default', function () {
+  var plugins = [
+    uncss({
+      html: ['web/**/*.html']
+    })
+  ];
+  return gulp.src(['src/**/*.css'])
+    .pipe(postcss(plugins))
     .pipe(gulp.dest('./web/css'));
 });
-
-exports.build = uncss;
