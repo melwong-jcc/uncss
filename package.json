@@ -1,0 +1,10 @@
+{
+  "name": "uncss",
+  "scripts": {
+    "build": "gulp uncss"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uncss": "^1.0.6"
+  }
+}
