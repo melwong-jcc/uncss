@@ -5,9 +5,10 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "gulp-postcss": "^9.0.0",
-    "postcss": "^8.3.2",
     "gulp-uncss": "^1.0.6",
+    "postcss": "^8.3.2",
     "postcss-uncss": "^0.17.0"
   }
 }
